@@ -1,0 +1,4 @@
+[mcp_servers.personal-agent-memory]
+command = "agent-memory"
+args = ["mcp"]
+

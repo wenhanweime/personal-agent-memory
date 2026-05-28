@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Never commit a user's real memory vault.
+.agent-memory/
+demo-memory/private/
+demo-memory/sources/
+demo-memory/life/
+demo-memory/qmd-index/
+
+# Local env/secrets.
+.env
+*.key
+*.pem
+*.enc.tmp

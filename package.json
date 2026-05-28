@@ -1,0 +1,29 @@
+{
+  "name": "personal-agent-memory",
+  "version": "0.1.0",
+  "description": "A local-first memory assistant for coding agents: readable Markdown, encrypted secrets, hooks, and MCP.",
+  "type": "module",
+  "bin": {
+    "agent-memory": "./bin/agent-memory.mjs",
+    "agent-memory-mcp": "./bin/agent-memory-mcp.mjs"
+  },
+  "scripts": {
+    "check": "node --check bin/agent-memory.mjs && node --check bin/agent-memory-mcp.mjs",
+    "smoke": "node bin/agent-memory.mjs status --home ./demo-memory"
+  },
+  "keywords": [
+    "ai-memory",
+    "mcp",
+    "claude-code",
+    "codex",
+    "local-first",
+    "markdown"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.21.0"
+  }
+}
