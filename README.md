@@ -2,6 +2,8 @@
 
 **A tiny local memory assistant for coding agents.**
 
+![Personal Agent Memory architecture](assets/agent-memory-architecture.png)
+
 Personal Agent Memory gives Claude Code, Codex, OpenClaw, Hermes, and other agent tools a shared local memory without sending your private project history to a cloud service.
 
 It is deliberately simple:
@@ -13,6 +15,18 @@ It is deliberately simple:
 - one local folder you control
 
 Think of it as a personal project ledger for AI agents.
+
+## How It Works
+
+Personal Agent Memory turns scattered agent chats into one local memory layer:
+
+- your agents save durable facts through hooks, CLI commands, or MCP tools
+- readable notes land in `~/.agent-memory/human`
+- secrets are redacted from Markdown and encrypted separately
+- search indexes and Basic Memory can sit on top of the readable ledger
+- every agent can start from the same local context instead of a blank session
+
+The result is simple: Claude Code, Codex, OpenClaw, Hermes, and future tools can all remember the same project decisions, workflows, and preferences while you keep ownership of the files.
 
 ## Why
 
@@ -44,7 +58,7 @@ The `human/` folder is meant to be opened and read. The `private/` folder is not
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_NAME/personal-agent-memory.git
+git clone https://github.com/wenhanweime/personal-agent-memory.git
 cd personal-agent-memory
 npm install
 npm link
