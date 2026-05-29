@@ -12,8 +12,8 @@
     "url": "https://github.com/wenhanweime/personal-agent-memory/issues"
   },
   "bin": {
-    "agent-memory": "./bin/agent-memory.mjs",
-    "agent-memory-mcp": "./bin/agent-memory-mcp.mjs"
+    "agent-memory": "bin/agent-memory.mjs",
+    "agent-memory-mcp": "bin/agent-memory-mcp.mjs"
   },
   "scripts": {
     "check": "node --check bin/agent-memory.mjs && node --check bin/agent-memory-mcp.mjs",
