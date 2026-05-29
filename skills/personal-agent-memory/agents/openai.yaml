@@ -1,4 +1,3 @@
-display_name: Personal Agent Memory
-short_description: Shared local memory for Claude Code, Codex, OpenClaw, and other agents.
-default_prompt: Use Personal Agent Memory to save, recall, or install a local-first cross-agent memory system with readable Markdown and encrypted secrets.
-
+display_name: 个人Agent记忆
+short_description: 为 Claude Code、Codex、OpenClaw 等 Agent 提供共享本地长期记忆。
+default_prompt: 使用 Personal Agent Memory 保存、召回或安装本地优先的跨 Agent 记忆系统，包含可读 Markdown、加密 secrets、hooks 和 MCP。
