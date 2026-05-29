@@ -14,8 +14,14 @@ It has two layers:
 Install the CLI:
 
 ```bash
-npm install -g personal-agent-memory
+npm install -g github:wenhanweime/personal-agent-memory
 agent-memory init
+```
+
+After the npm package is published, this shorter form will also work:
+
+```bash
+npm install -g personal-agent-memory
 ```
 
 Install the agent skill:
@@ -84,7 +90,14 @@ npm install -g personal-agent-memory
 agent-memory init
 ```
 
-From GitHub:
+From GitHub, which works before the npm package is published:
+
+```bash
+npm install -g github:wenhanweime/personal-agent-memory
+agent-memory init
+```
+
+For local development:
 
 ```bash
 git clone https://github.com/wenhanweime/personal-agent-memory.git

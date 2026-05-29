@@ -15,6 +15,17 @@
     "agent-memory": "bin/agent-memory.mjs",
     "agent-memory-mcp": "bin/agent-memory-mcp.mjs"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "assets/agent-memory-architecture.png",
+    "bin/",
+    "docs/",
+    "examples/",
+    "skills.sh.json",
+    "skills/"
+  ],
   "scripts": {
     "check": "node --check bin/agent-memory.mjs && node --check bin/agent-memory-mcp.mjs",
     "smoke": "node bin/agent-memory.mjs status --home ./demo-memory"
