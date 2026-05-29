@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "A local-first memory assistant for coding agents: readable Markdown, encrypted secrets, hooks, and MCP.",
   "type": "module",
+  "homepage": "https://github.com/wenhanweime/personal-agent-memory#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenhanweime/personal-agent-memory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wenhanweime/personal-agent-memory/issues"
+  },
   "bin": {
     "agent-memory": "./bin/agent-memory.mjs",
     "agent-memory-mcp": "./bin/agent-memory-mcp.mjs"

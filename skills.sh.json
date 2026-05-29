@@ -1,0 +1,9 @@
+{
+  "skills": [
+    {
+      "name": "personal-agent-memory",
+      "path": "skills/personal-agent-memory",
+      "description": "Shared local memory for Claude Code, Codex, OpenClaw, Hermes, and other coding agents."
+    }
+  ]
+}

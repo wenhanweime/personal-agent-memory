@@ -1,0 +1,4 @@
+display_name: Personal Agent Memory
+short_description: Shared local memory for Claude Code, Codex, OpenClaw, and other agents.
+default_prompt: Use Personal Agent Memory to save, recall, or install a local-first cross-agent memory system with readable Markdown and encrypted secrets.
+

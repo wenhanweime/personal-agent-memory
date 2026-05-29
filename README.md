@@ -6,6 +6,26 @@
 
 Personal Agent Memory gives Claude Code, Codex, OpenClaw, Hermes, and other agent tools a shared local memory without sending your private project history to a cloud service.
 
+It has two layers:
+
+- **Runtime layer:** CLI, MCP server, hooks, readable Markdown, and encrypted secret storage.
+- **Skill layer:** a portable agent instruction pack that teaches agents when to remember and how to call the runtime.
+
+Install the CLI:
+
+```bash
+npm install -g personal-agent-memory
+agent-memory init
+```
+
+Install the agent skill:
+
+```bash
+npx skills add wenhanweime/personal-agent-memory --skill personal-agent-memory -g --agent '*'
+```
+
+The CLI stores memory. The skill teaches your agent when to save, recall, redact, and search it.
+
 It is deliberately simple:
 
 - human-readable Markdown for the things you want to inspect
@@ -57,6 +77,15 @@ The `human/` folder is meant to be opened and read. The `private/` folder is not
 
 ## Install
 
+From npm:
+
+```bash
+npm install -g personal-agent-memory
+agent-memory init
+```
+
+From GitHub:
+
 ```bash
 git clone https://github.com/wenhanweime/personal-agent-memory.git
 cd personal-agent-memory
@@ -64,6 +93,24 @@ npm install
 npm link
 agent-memory init
 ```
+
+## Install As A Skill
+
+Personal Agent Memory also ships as an agent skill. Use it when you want Codex, Claude Code, OpenClaw, Hermes, or another skill-aware agent to understand the memory protocol automatically:
+
+```bash
+npx skills add wenhanweime/personal-agent-memory --skill personal-agent-memory -g --agent '*'
+```
+
+The skill is intentionally thin:
+
+- it tells agents when to save durable facts
+- it tells agents when to recall existing context
+- it routes writes through `agent-memory save`
+- it keeps full secrets out of readable Markdown
+- it explains the MCP and Basic Memory integration
+
+The real storage still lives in the local CLI/MCP system.
 
 ## Install With Basic Memory
 
